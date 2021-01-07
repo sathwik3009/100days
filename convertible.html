@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>box</title>
+<style>
+
+#sat{
+  background-color: orange;
+  width: 200px;
+  height: 400px;
+  text-align: center;
+  border:3px solid black;
+  margin: auto;
+}
+input{
+  background-color:black;
+  color:white;
+  margin-top:150px;
+}
+</style>
+</head>
+<body>
+
+<div id="sat">
+<input type="button"  value="count" id="countButton" />
+<p>button pressed<span id="displayCount">0</span></p>
+</div>
+<script type="text/javascript">
+     var count = 0;
+     var button = document.getElementById("countButton");
+     var display = document.getElementById("displayCount");
+
+     button.onclick = function(){
+       count++;
+       display.innerHTML = count;
+     }
+   </script>
+</body>
+</html>
